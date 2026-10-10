@@ -1,5 +1,11 @@
 # microG Companion with Play Age Signals, for the gvwifi ROM
 
+> **Superseded (2026-10-10):** official microG [0.3.17](https://github.com/microg/GmsCore/releases/tag/v0.3.17.252432)
+> includes Play Age Signals (#3742), so this build is no longer needed. Use official microG Services
+> and Companion 0.3.17 or newer. Because this build is signed with a different key than microG Services,
+> it also cannot get microG's signature permissions (apps doing a Play license check crash it).
+> To switch: uninstall `com.android.vending`, then install the official Companion.
+
 microG Companion (`com.android.vending`) built **unmodified** from microG GmsCore master at
 `fcb2c20377eecacf23a6a6007a4be4f834cdfb3a`, which includes microG PR #3742
 ("Vending: Add Age Signals service", released in 0.3.17). Apps that query Age Signals fail with error GA-5 without it.
